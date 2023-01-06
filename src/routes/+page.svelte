@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { afterNavigate } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import HeroImage from '$lib/assets/images/HeroImage.svg';
+
 	let animate: boolean = false;
 
 	onMount(() => {
@@ -66,7 +68,7 @@
 			</div>
 			<figure class="relative flex flex-col">
 				<img
-					src="FrontPageIllustration.svg"
+					src={HeroImage}
 					alt="Person having issues with their IT services"
 					class="h-80 w-80 md:w-auto md:h-96 opacity-0 {animate
 						? ''
