@@ -110,7 +110,7 @@
 	</header>
 </div>
 <div class="container mx-auto p-4 mt-4">
-	<h2 class="text-2xl sm:text-4xl text-center my-12">Our Services</h2>
+	<h2 class="text-2xl md:text-6xl text-center mt-12 mb-16">Our Services</h2>
 	<div class="flex flex-col md:grid md:grid-cols-3 md:gap-2 justify-between mt-4">
 		{#each services as service}
 			<div class="card-glass-surface my-12 rounded-lg p-4 mx-4 flex flex-col shadow-lg">
