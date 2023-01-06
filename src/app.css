@@ -101,7 +101,7 @@
 
 @layer components {
 	.fill-token {
-		@apply dark:fill-white fill-black;
+		@apply fill-white;
 	}
 	.card-glass-surface {
 		background-color: rgb(var(--color-surface-500) / 0.1);
