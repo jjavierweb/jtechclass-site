@@ -9,7 +9,7 @@
 		animate = true;
 		setTimeout(() => {
 			animate = false;
-		}, 2000);
+		}, 1000);
 	});
 </script>
 
