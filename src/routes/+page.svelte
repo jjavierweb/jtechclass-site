@@ -1,9 +1,36 @@
 <script lang="ts">
-	import { afterNavigate } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import HeroImage from '$lib/assets/images/HeroImage.svg';
 
+	import NetworkService from '$lib/assets/images/NetworkService.svg';
+	import WebsiteService from '$lib/assets/images/WebsiteService.svg';
+	import DomainServices from '$lib/assets/images/DomainServices.svg';
+
+	// variables below
 	let animate: boolean = false;
+
+	const services: Array<any> = [
+		{
+			serviceName: 'Network Design',
+			image: NetworkService,
+			description:
+				'We offer professional network design services to help businesses plan and implement efficient and reliable computer network infrastructure. Our services include needs assessments, hardware and software selection, and network configuration to ensure security, reliability, and efficiency.'
+		},
+		{
+			serviceName: 'Website Design',
+			image: WebsiteService,
+			description:
+				'We provide web design services to help businesses establish and enhance their online presence. Our services include the creation of visually appealing and user-friendly websites optimized for search engines and mobile devices.'
+		},
+		{
+			serviceName: 'IT Support',
+			image: DomainServices,
+			description:
+				'We offer IT support services to help businesses maintain the smooth operation of their technology systems. Our services include troubleshooting and problem-solving for hardware, software, and network issues, as well as assistance with installations, configurations, and maintenance.'
+		}
+	];
+
+	// methods below
 
 	onMount(() => {
 		animate = true;
@@ -24,13 +51,15 @@
 	<header
 		class="card-glass-surface border-b border-black/5 dark:border-white/5 px-4 py-10 md:py-20"
 	>
-		<div class="container  mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
+		<div
+			class="container mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-10 place-items-center place-content-center"
+		>
 			<div class="space-y-4">
 				<svg
 					data-v-423bf9ae=""
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 399.3695960415582 163"
-					class="fill-token h-32"
+					class="fill-token h-32 block mx-auto md:inline"
 					><!----><!----><!----><g
 						data-v-423bf9ae=""
 						id="7c57c10d-67ad-4daf-832c-4866646d63b0"
@@ -55,12 +84,14 @@
 						/></g
 					><!----></svg
 				>
-				<h2 class="text-2xl md:text-4xl">"Exceed your tech goals with JTechClass."</h2>
-				<p class="md:!text-lg">
-					Small businesses are the backbone of the economy. JTechClass is here to support yours with
-					top-notch tech services.
+				<h2 class="text-2xl md:text-4xl text-center md:text-start">
+					"Exceed your tech goals with JTechClass."
+				</h2>
+				<p class="md:!text-lg text-center md:text-start font-semibold italic">
+					"Small businesses are the backbone of the economy. JTechClass is here to support yours
+					with top-notch tech services.""
 				</p>
-				<nav class="flex space-x-4">
+				<nav class="flex space-x-4 justify-center md:justify-start">
 					<a href="/" class="btn bg-primary-500 flex align-middle"
 						><span>Learn more</span> <span class="">&RightArrow;</span></a
 					> <a href="/about-us" class="btn bg-surface-400/20 ">Why JTechClass?</a>
@@ -78,19 +109,26 @@
 		</div>
 	</header>
 </div>
-<div class="container mx-auto p-4">
-	<p>
-		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, aut corporis animi iusto
-		ea rerum saepe quis repudiandae laborum iure voluptatum minima tempora ad accusantium, omnis
-		quaerat quisquam, veniam nostrum. Odit, magnam iste necessitatibus sunt blanditiis laborum sed
-		quasi unde esse quod illo ad beatae, similique commodi natus sint dignissimos reprehenderit
-		perspiciatis exercitationem animi suscipit! Doloribus minus at optio libero! Earum nesciunt
-		officiis corrupti deleniti voluptas molestias doloribus fugiat quasi aliquam repudiandae quia
-		dolorem aperiam cumque repellendus eius, at tenetur consequuntur vero a in voluptatem. Itaque
-		illo in velit fugiat. Quos quas porro ipsam, facere cum asperiores harum repellat animi odit
-		sequi quibusdam, delectus eos temporibus? Sint quod nihil non voluptates ipsum ab modi atque,
-		temporibus sunt assumenda eum magni. Voluptatem, itaque commodi nam aliquid cum amet ut officiis
-		sapiente, id, numquam aperiam suscipit expedita a laborum atque quas consequuntur tempore
-		veritatis rerum beatae laudantium et. Tempore quidem eligendi labore.
-	</p>
+<div class="container mx-auto p-4 mt-4">
+	<h2 class="text-2xl sm:text-4xl text-center my-12">Our Services</h2>
+	<div class="flex flex-col md:grid md:grid-cols-3 md:gap-2 justify-between mt-4">
+		{#each services as service}
+			<div class="card-glass-surface my-12 rounded-lg p-4 mx-4 flex flex-col shadow-lg">
+				<div class="flex justify-center">
+					<img src={service.image} alt={service.serviceName} class=" h-48 -translate-y-20" />
+				</div>
+				<div class="-translate-y-10">
+					<h2 class="text-xl md:text-3xl text-center font-semibold text-primary-500 uppercase">
+						{service.serviceName}
+					</h2>
+					<p class="text-justify mt-2 p-4">{service.description}</p>
+				</div>
+				<div class="flex flex-1 justify-center items-end -translate-y-5">
+					<button class="btn bg-primary-500 fill-token text-base p-4"
+						>Explore more &rightarrow;</button
+					>
+				</div>
+			</div>
+		{/each}
+	</div>
 </div>
