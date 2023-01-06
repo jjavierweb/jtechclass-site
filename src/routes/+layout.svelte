@@ -2,7 +2,7 @@
 	import '../app.css';
 	import { afterNavigate } from '$app/navigation';
 
-	const menu_links = [
+	const menu_links: Array<any> = [
 		{ name: 'Home', url: '/' },
 		{ name: 'About Us', url: '/about-us' },
 		{ name: 'Contact Us', url: '/contact-us' }
