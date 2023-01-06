@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import { afterNavigate } from '$app/navigation';
 
 	const menu_links = [
 		{ name: 'Home', url: '/' },
@@ -8,10 +9,12 @@
 	];
 
 	let showMenu: boolean = false;
-	console.log(showMenu);
 	function toggleNavbar() {
 		showMenu = !showMenu;
 	}
+	afterNavigate(() => {
+		showMenu = false;
+	});
 </script>
 
 <svelte:head>
@@ -94,33 +97,21 @@
 					class="lg:!hidden btn btn-sm flex flex-col h-10 w-10 justify-center items-center group"
 					on:click={toggleNavbar}
 				>
-					<div
-						class="h-1 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 {showMenu
-							? 'rotate-45 translate-y-1 opacity-50 group-hover:opacity-100'
+					<span
+						class="h-2 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 {showMenu
+							? 'rotate-45 translate-y-3 opacity-50 group-hover:opacity-100'
 							: 'opacity-50 group-hover:opacity-100'}"
 					/>
-					<div
-						class="h-1 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 {showMenu
+					<span
+						class="h-2 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 {showMenu
 							? 'opacity-0'
 							: 'opacity-50 group-hover:opacity-100'}"
 					/>
-					<div
-						class="h-1 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 {showMenu
-							? '-rotate-45 -translate-y-4 opacity-50 group-hover:opacity-100'
+					<span
+						class="h-2 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 {showMenu
+							? '-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100'
 							: 'opacity-50 group-hover:opacity-100'}"
 					/>
-					<!-- <svg
-						xmlns="http://www.w3.org/2000/svg"
-						x="0px"
-						y="0px"
-						viewBox="0 0 576 512"
-						class="svg-icon inline-block outline-none fill-current w-5 h-5 "
-						focusable="false"
-						data-testid="svg-icon"
-						><path
-							d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
-						/></svg
-					> -->
 				</button>
 				<section class="hidden lg:flex">
 					{#each menu_links as link}
@@ -139,10 +130,7 @@
 		</div>
 	</nav>
 </header>
-<div class="flex-auto w-full h-full flex overflow-hidden">
-	<div id="page" class="flex-1 overflow-x-hidden overflow-y-auto flex flex-col">
-		<main id="page-content" class="flex-auto">
-			<slot />
-		</main>
-	</div>
-</div>
+
+<main id="page-content" class=" overflow-x-hidden overflow-y-auto h-full">
+	<slot />
+</main>
