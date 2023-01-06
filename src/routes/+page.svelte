@@ -48,9 +48,7 @@
 	/>
 </svelte:head>
 <div>
-	<header
-		class="card-glass-surface border-b border-black/5 dark:border-white/5 px-4 py-10 md:py-20"
-	>
+	<header class="card-glass-surface border-b border-white/5 px-4 py-10 md:py-20">
 		<div
 			class="container mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-10 place-items-center place-content-center"
 		>

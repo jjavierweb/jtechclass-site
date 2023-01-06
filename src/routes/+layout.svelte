@@ -98,17 +98,17 @@
 					on:click={toggleNavbar}
 				>
 					<span
-						class="h-2 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 {showMenu
+						class="h-2 w-6 my-1 rounded-full bg-white transition ease transform duration-200 {showMenu
 							? 'rotate-45 translate-y-3 opacity-50 group-hover:opacity-100'
 							: 'opacity-50 group-hover:opacity-100'}"
 					/>
 					<span
-						class="h-2 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 {showMenu
+						class="h-2 w-6 my-1 rounded-full bg-white transition ease transform duration-200 {showMenu
 							? 'opacity-0'
 							: 'opacity-50 group-hover:opacity-100'}"
 					/>
 					<span
-						class="h-2 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 {showMenu
+						class="h-2 w-6 my-1 rounded-full bg-white transition ease transform duration-200 {showMenu
 							? '-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100'
 							: 'opacity-50 group-hover:opacity-100'}"
 					/>

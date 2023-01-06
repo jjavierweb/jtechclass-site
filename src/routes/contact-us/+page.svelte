@@ -27,7 +27,7 @@
 </svelte:head>
 
 <div class="container mx-auto p-4 mt-4">
-	<h1 class="text-2xl font-bold sm:text-4xl text-center">Contact Us</h1>
+	<h1 class="text-2xl font-bold md:text-4xl text-center">Contact Us</h1>
 	<div class="container p-4 flex flex-col md:flex-row justify-between">
 		<div class="flex flex-grow">
 			<form action="" method="post" on:submit|preventDefault class="m-4 flex-grow">

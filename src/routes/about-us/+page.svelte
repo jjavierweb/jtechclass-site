@@ -7,7 +7,7 @@
 </svelte:head>
 
 <div class="container mx-auto p-4 mt-4">
-	<h1 class="text-2xl font-bold sm:text-4xl text-center">About Us</h1>
+	<h1 class="text-2xl font-bold md:text-4xl text-center">About Us</h1>
 	<div class="mt-4">
 		<h2 class="text-xl font-semibold md:text-2xl">Our Mission:</h2>
 		<p class="text-justify">
