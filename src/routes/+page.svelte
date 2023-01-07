@@ -48,7 +48,7 @@
 	/>
 </svelte:head>
 <div>
-	<header class="card-glass-surface border-b border-white/5 px-4 py-10 md:py-20">
+	<header class="card-glass-surface px-4 py-10 md:py-20 ">
 		<div
 			class="container mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-10 place-items-center place-content-center"
 		>
@@ -112,7 +112,7 @@
 	<div class="flex flex-col md:grid md:grid-cols-3 md:gap-2 justify-between mt-4">
 		{#each services as service}
 			<div class="card-glass-surface my-12 rounded-lg p-4 mx-4 flex flex-col shadow-lg">
-				<div class="flex justify-center">
+				<div class="flex justify-center aspect">
 					<img src={service.image} alt={service.serviceName} class=" h-48 -translate-y-20" />
 				</div>
 				<div class="-translate-y-10">
