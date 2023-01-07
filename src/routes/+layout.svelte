@@ -133,6 +133,6 @@
 	</nav>
 </header>
 
-<main id="page-content" class=" overflow-x-hidden overflow-y-auto h-full">
+<main id="page-content" class="">
 	<slot />
 </main>
