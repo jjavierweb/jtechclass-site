@@ -113,7 +113,13 @@
 		{#each services as service}
 			<div class="card-glass-surface my-12 rounded-lg p-4 mx-4 flex flex-col shadow-lg">
 				<div class="flex justify-center aspect">
-					<img src={service.image} alt={service.serviceName} class=" h-48 w-auto -translate-y-20" />
+					<img
+						src={service.image}
+						alt={service.serviceName}
+						height="192px"
+						width="auto"
+						class="h-48 w-auto -translate-y-20"
+					/>
 				</div>
 				<div class="-translate-y-10">
 					<h2 class="text-xl md:text-3xl text-center  text-primary-50 font-semibold uppercase">
