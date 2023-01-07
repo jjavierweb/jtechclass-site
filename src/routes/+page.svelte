@@ -99,9 +99,9 @@
 				<img
 					src={HeroImage}
 					alt="Person having issues with their IT services"
-					class="h-80 w-80 md:w-auto md:h-96 opacity-0 {animate
-						? ''
-						: 'transition-opacity ease-in opacity-100 duration-1000 motion-reduce:transition-all'}"
+					height="384px"
+					width="486.83px"
+					class="h-80 w-80 md:w-auto md:h-96"
 				/>
 			</figure>
 		</div>
