@@ -117,7 +117,7 @@
 						src={service.image}
 						alt={service.serviceName}
 						height="192px"
-						width="auto"
+						width="243.41px"
 						class="h-48 w-auto -translate-y-20"
 					/>
 				</div>
