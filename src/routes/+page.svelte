@@ -1,13 +1,10 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import HeroImage from '$lib/assets/images/HeroImage.svg';
-
 	import NetworkService from '$lib/assets/images/NetworkService.svg';
 	import WebsiteService from '$lib/assets/images/WebsiteService.svg';
 	import DomainServices from '$lib/assets/images/DomainServices.svg';
 
 	// variables below
-	let animate: boolean = false;
 
 	const services: Array<any> = [
 		{
@@ -31,13 +28,6 @@
 	];
 
 	// methods below
-
-	onMount(() => {
-		animate = true;
-		setTimeout(() => {
-			animate = false;
-		}, 1000);
-	});
 </script>
 
 <svelte:head>
