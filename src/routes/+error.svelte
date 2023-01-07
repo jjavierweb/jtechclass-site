@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import ErrorImage from '$lib/assets/images/ErrorImage.svg';
+	import Error404 from '$lib/assets/images/Error404.svg';
+	import Error500 from '$lib/assets/images/Error500.svg';
 </script>
 
 <div class="h-[calc(100vh-150px)] mx-auto p-4 flex justify-center items-center">
@@ -20,8 +21,14 @@
 		</div>
 		{#if $page.error?.message === 'Not Found'}
 			<img
-				src={ErrorImage}
+				src={Error404}
 				alt="Error Message Page not found"
+				class="h-96 w-auto align-middle items-center"
+			/>
+		{:else if $page.error?.message === 'Internal Error'}
+			<img
+				src={Error500}
+				alt="Error Message Internal Server issue"
 				class="h-96 w-auto align-middle items-center"
 			/>
 		{/if}
