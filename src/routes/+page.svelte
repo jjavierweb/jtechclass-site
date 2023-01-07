@@ -1,8 +1,8 @@
 <script lang="ts">
-	import HeroImage from '$lib/assets/images/HeroImage.svg';
+	import BusinessSolution from '$lib/assets/images/BusinessSolution.svg';
 	import NetworkService from '$lib/assets/images/NetworkService.svg';
 	import WebsiteService from '$lib/assets/images/WebsiteService.svg';
-	import DomainServices from '$lib/assets/images/DomainServices.svg';
+	import ITSupport from '$lib/assets/images/ITSupport.svg';
 
 	// import components
 	import Card from '$lib/components/Cards.svelte';
@@ -27,7 +27,7 @@
 		},
 		{
 			serviceName: 'IT Support',
-			image: DomainServices,
+			image: ITSupport,
 			description:
 				'We offer IT support services to help businesses maintain the smooth operation of their technology systems. Our services include troubleshooting and problem-solving for hardware, software, and network issues, as well as assistance with installations, configurations, and maintenance.'
 		}
@@ -93,7 +93,7 @@
 			</div>
 			<figure class="relative flex flex-col">
 				<img
-					src={HeroImage}
+					src={BusinessSolution}
 					alt="Person having issues with their IT services"
 					height="384px"
 					width="486.83px"
@@ -110,4 +110,5 @@
 			<Card {...service} />
 		{/each}
 	</div>
+	<hr />
 </div>
