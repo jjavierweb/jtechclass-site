@@ -105,7 +105,7 @@
 	}
 	.card-glass-surface {
 		/* background-color: rgb(var(--color-surface-500) / 0.1); */
-		@apply bg-surface-500/10 ring-surface-50/10 ring-1 backdrop-blur-lg;
+		@apply bg-surface-500/50 ring-surface-50/30 ring-1 backdrop-blur-lg;
 	}
 	.btn:active {
 		@apply scale-90 transform;
