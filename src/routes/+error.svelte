@@ -3,7 +3,7 @@
 	import ErrorImage from '$lib/assets/images/ErrorImage.svg';
 </script>
 
-<div class=" h-[calc(100vh-150px)] mx-auto p-4 flex justify-center items-center">
+<div class="h-[calc(100vh-150px)] mx-auto p-4 flex justify-center items-center">
 	<div class="flex flex-col align-middle place-content-center">
 		<div class="card-glass-surface p-4 rounded-md">
 			<h1 class="text-2xl sm:text-4xl uppercase text-center">An error has occurred.</h1>
