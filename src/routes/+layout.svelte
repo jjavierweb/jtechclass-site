@@ -9,6 +9,8 @@
 		{ name: 'Contact Us', url: '/contact-us' }
 	];
 
+	let year = new Date().getFullYear();
+
 	let showMenu: boolean = false;
 	function toggleNavbar() {
 		showMenu = !showMenu;
@@ -136,3 +138,13 @@
 <main id="page-content" class="">
 	<slot />
 </main>
+
+<footer>
+	<div class="container justify-evenly mx-auto p-8 mt-12">
+		<hr />
+		<div class="flex flex-col md:flex-row justify-evenly p-4 gap-4">
+			<div class="items-start">Created by JTechClass &copy; {year}</div>
+			<div class="md:ml-auto">All Right Reserved &reg;</div>
+		</div>
+	</div>
+</footer>
