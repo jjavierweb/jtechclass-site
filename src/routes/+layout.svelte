@@ -5,6 +5,7 @@
 	const menu_links: Array<any> = [
 		{ name: 'Home', url: '/' },
 		{ name: 'About Us', url: '/about-us' },
+		{ name: 'Services', url: '/services' },
 		{ name: 'Contact Us', url: '/contact-us' }
 	];
 
@@ -96,6 +97,7 @@
 				<button
 					class="lg:!hidden btn btn-sm flex flex-col h-10 w-10 justify-center items-center group"
 					on:click={toggleNavbar}
+					aria-label="Menu button"
 				>
 					<span
 						class="h-2 w-6 my-1 rounded-full bg-white transition ease transform duration-200 {showMenu
