@@ -112,8 +112,8 @@ module.exports = {
 					display: 'inline-flex',
 					'align-items': 'center',
 					'justify-content': 'center',
-					'transition-propery': 'all',
-					'transition-timing-funciton': 'cubic-bezier(.4,0,.2,1)',
+					'transition-property': 'all',
+					'transition-timing-function': 'cubic-bezier(.4,0,.2,1)',
 					'transition-duration': '.15s',
 					'&:hover': {
 						'--tw-brightness': 'brightness(1.1)',
