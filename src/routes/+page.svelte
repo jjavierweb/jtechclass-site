@@ -4,9 +4,15 @@
 	import WebsiteService from '$lib/assets/images/WebsiteService.svg';
 	import DomainServices from '$lib/assets/images/DomainServices.svg';
 
+	// import components
+	import Card from '$lib/components/Cards.svelte';
+
+	//import types
+	import type { Service } from '$lib/types/types';
+
 	// variables below
 
-	const services: Array<any> = [
+	const services: Array<Service> = [
 		{
 			serviceName: 'Network Design',
 			image: NetworkService,
@@ -101,28 +107,7 @@
 	<h2 class="text-2xl md:text-6xl text-center mt-12 mb-16">Our Services</h2>
 	<div class="flex flex-col md:grid md:grid-cols-3 md:gap-2 justify-between mt-4">
 		{#each services as service}
-			<div class="card-glass-surface my-12 rounded-lg p-4 mx-4 flex flex-col shadow-lg">
-				<div class="flex justify-center aspect">
-					<img
-						src={service.image}
-						alt={service.serviceName}
-						height="192px"
-						width="243.41px"
-						class="h-48 w-auto -translate-y-20"
-					/>
-				</div>
-				<div class="-translate-y-10">
-					<h2 class="text-xl md:text-3xl text-center  text-primary-50 font-semibold uppercase">
-						{service.serviceName}
-					</h2>
-					<p class="text-justify mt-2 p-4">{service.description}</p>
-				</div>
-				<div class="flex flex-1 justify-center items-end -translate-y-5">
-					<button class="btn bg-primary-500 fill-token text-base p-4"
-						>Explore more &rightarrow;</button
-					>
-				</div>
-			</div>
+			<Card {...service} />
 		{/each}
 	</div>
 </div>
