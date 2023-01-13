@@ -109,8 +109,7 @@
 		@apply fill-white;
 	}
 	.card-glass-surface {
-		/* background-color: rgb(var(--color-surface-500) / 0.1); */
-		@apply bg-surface-500/50 ring-surface-50/30 ring-1 backdrop-blur-lg;
+		@apply bg-gradient-to-tl from-surface-600/50 to-transparent ring-surface-50/30 ring-1 bg-opacity-20;
 	}
 	.btn:active {
 		@apply scale-90 transform;

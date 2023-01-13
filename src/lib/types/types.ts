@@ -3,3 +3,12 @@ export interface Service {
 	serviceName: string;
 	description: string;
 }
+
+export interface Review {
+	stars: number;
+	review: string;
+	customerImage: string;
+	author: string;
+	authorImage: string;
+	authorPosition: string;
+}
