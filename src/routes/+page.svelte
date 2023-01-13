@@ -6,9 +6,10 @@
 
 	// import components
 	import Card from '$lib/components/Cards.svelte';
+	import Testimonial from '$lib/components/Testimonial.svelte';
 
 	//import types
-	import type { Service } from '$lib/types/types';
+	import type { Service, Review } from '$lib/types/types';
 
 	// variables below
 
@@ -30,6 +31,63 @@
 			image: ITSupport,
 			description:
 				'We offer IT support services to help businesses maintain the smooth operation of their technology systems. Our services include troubleshooting and problem-solving for hardware, software, and network issues, as well as assistance with installations, configurations, and maintenance.'
+		}
+	];
+
+	const testimonials: Review[] = [
+		{
+			author: 'Ash',
+			customerImage: ITSupport,
+			authorPosition: 'CEO',
+			stars: 5,
+			authorImage: '',
+			review:
+				'I recently took a course with JTechclass and I was extremely impressed with the quality of instruction. The instructor was knowledgeable and was able to clearly explain complex concepts in a way that was easy to understand. The course materials were well-organized and easy to follow, and the online platform was user-friendly and easy to navigate. Overall, I had a great experience with JTechclass and would highly recommend it to anyone looking to learn new tech skills.'
+		},
+		{
+			author: 'Josh',
+			customerImage: ITSupport,
+			authorPosition: 'CTO',
+			stars: 2,
+			authorImage: '',
+			review:
+				'I recently took a course with JTechclass and I was extremely impressed with the quality of instruction. The instructor was knowledgeable and was able to clearly explain complex concepts in a way that was easy to understand. The course materials were well-organized and easy to follow, and the online platform was user-friendly and easy to navigate. Overall, I had a great experience with JTechclass and would highly recommend it to anyone looking to learn new tech skills.'
+		},
+		{
+			author: 'Julia',
+			customerImage: ITSupport,
+			authorPosition: 'Owner',
+			stars: 5,
+			authorImage: '',
+			review:
+				'I recently took a course with JTechclass and I was extremely impressed with the quality of instruction. The instructor was knowledgeable and was able to clearly explain complex concepts in a way that was easy to understand. The course materials were well-organized and easy to follow, and the online platform was user-friendly and easy to navigate. Overall, I had a great experience with JTechclass and would highly recommend it to anyone looking to learn new tech skills.'
+		},
+		{
+			author: 'Mari',
+			customerImage: ITSupport,
+			authorPosition: 'Owner',
+			stars: 5,
+			authorImage: '',
+			review:
+				'I recently took a course with JTechclass and I was extremely impressed with the quality of instruction. The instructor was knowledgeable and was able to clearly explain complex concepts in a way that was easy to understand. The course materials were well-organized and easy to follow, and the online platform was user-friendly and easy to navigate. Overall, I had a great experience with JTechclass and would highly recommend it to anyone looking to learn new tech skills.'
+		},
+		{
+			author: 'Jul',
+			customerImage: ITSupport,
+			authorPosition: 'Owner',
+			stars: 5,
+			authorImage: '',
+			review:
+				'I recently took a course with JTechclass and I was extremely impressed with the quality of instruction. The instructor was knowledgeable and was able to clearly explain complex concepts in a way that was easy to understand. The course materials were well-organized and easy to follow, and the online platform was user-friendly and easy to navigate. Overall, I had a great experience with JTechclass and would highly recommend it to anyone looking to learn new tech skills.'
+		},
+		{
+			author: 'Antonio',
+			customerImage: ITSupport,
+			authorPosition: 'Owner',
+			stars: 5,
+			authorImage: '',
+			review:
+				'I recently took a course with JTechclass and I was extremely impressed with the quality of instruction. The instructor was knowledgeable and was able to clearly explain complex concepts in a way that was easy to understand. The course materials were well-organized and easy to follow, and the online platform was user-friendly and easy to navigate. Overall, I had a great experience with JTechclass and would highly recommend it to anyone looking to learn new tech skills.'
 		}
 	];
 
@@ -111,4 +169,10 @@
 		{/each}
 	</div>
 	<hr />
+	<section id="reviews" class="mt-12 flex flex-col md:grid md:grid-cols-2 items-center">
+		<div class="grid">
+			<h2 class="text-2xl md:text-6xl text-center">The Proof is in Our Customers' Praise!</h2>
+		</div>
+		<Testimonial {testimonials} />
+	</section>
 </div>
