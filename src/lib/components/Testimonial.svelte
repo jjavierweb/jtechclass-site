@@ -32,7 +32,7 @@
 	});
 </script>
 
-<section class="my-12 p-8 flex overflow-hidden relative w-full snap-y snap-mandatory">
+<section class="p-4 flex overflow-hidden relative w-full snap-y snap-mandatory">
 	{#each testimonials as review, i (review)}
 		{#key currentIndex}
 			{#if i === currentIndex}
