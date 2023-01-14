@@ -50,6 +50,8 @@
 							src={testimonials[currentIndex].customerImage}
 							alt=""
 							class="w-auto h-96 items-center"
+							width="0"
+							height="0"
 						/>
 					</div>
 					<div class="flex flex-col justify-center md:col-span-2 text-center md:text-start">
