@@ -1,3 +1,8 @@
+<script lang="ts">
+	// import images
+	import AboutUs2 from '$lib/assets/images/AboutUs2.svg';
+</script>
+
 <svelte:head>
 	<title>About Us - Javier Aviation</title>
 	<meta
@@ -7,10 +12,28 @@
 </svelte:head>
 
 <div class="container mx-auto p-4 mt-4">
-	<h1 class="text-2xl font-bold md:text-4xl text-center">About Us</h1>
-	<div class="mt-4">
-		<h2 class="text-xl font-semibold md:text-2xl">Our Mission:</h2>
-		<p class="text-justify">
+	<div class="flex flex-col lg:flex-row items-center">
+		<img src={AboutUs2} alt="About us illustration" class="w-auto h-96" width="0" height="0" />
+		<div class="flex flex-col justify-center items-center align-middle lg:ml-32 md:items-start">
+			<h1 class="text-4xl font-bold md:text-7xl">About Us</h1>
+			<p class="mt-4 text-lg">
+				Welcome to JTechClass, a small company dedicated to supporting small businesses with their
+				IT needs. We are a team of experienced IT professionals who understand the unique challenges
+				that small businesses face. Our goal is to provide our clients with the tools and support
+				they need to succeed in today's digital landscape.
+			</p>
+			<p class="mt-4 text-lg">
+				JTechClass was founded back in 2016 by Javier Gutierrez as a Youtube Channel where tutorials
+				for different IT technologies were presented. Javier Gutierrez is a passionate and
+				experienced IT professional with a vision to help small businesses succeed. He has built a
+				team of skilled professionals who share his passion and dedication to providing the best
+				possible service to our clients.
+			</p>
+		</div>
+	</div>
+	<div class="mt-8">
+		<h2 class="text-2xl font-semibold md:text-4xl">Our Mission:</h2>
+		<p class="text-justify mt-2">
 			At Javier Aviation, our mission is to provide small businesses with top-quality IT solutions
 			and support that enable them to operate efficiently and effectively. We are committed to
 			delivering exceptional customer service and building long-term partnerships with our clients.
@@ -19,9 +42,9 @@
 		</p>
 	</div>
 
-	<div class="mt-4">
-		<h2 class="text-xl font-semibold md:text-2xl">Our Vision:</h2>
-		<p class="text-justify">
+	<div class="mt-8">
+		<h2 class="text-2xl font-semibold md:text-4xl">Our Vision:</h2>
+		<p class="text-justify mt-2">
 			Javier Aviation is a small business dedicated to helping other small businesses with their IT
 			needs. Our vision is to become the go-to IT solutions provider for small businesses in our
 			community and beyond. We believe that small businesses are the backbone of the economy, and we
