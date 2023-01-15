@@ -113,7 +113,7 @@
 					alt="JTechClass Site logo"
 					width="0"
 					height="0"
-					class="fill-token w-auto h-32 block mx-auto md:inline"
+					class="fill-token w-auto h-24 md:h-32 block mx-auto md:inline"
 				/>
 				<h2 class="text-2xl md:text-4xl text-center md:text-start">
 					"Exceed your tech goals with JTechClass."
