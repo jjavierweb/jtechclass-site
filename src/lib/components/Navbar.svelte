@@ -28,7 +28,13 @@
 		<div class="flex-none flex justify-between items-center">
 			<a href="/" title="Go to Homepage">
 				<span class="inline sm:inline">
-					<img src={NewLogo} alt="Website Logo" class="fill-token h-10" />
+					<img
+						src={NewLogo}
+						alt="Website Logo"
+						class="fill-token h-10 w-auto"
+						width="0"
+						height="0"
+					/>
 				</span>
 			</a>
 		</div>
