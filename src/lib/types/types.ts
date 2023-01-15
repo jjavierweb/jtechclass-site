@@ -12,3 +12,8 @@ export interface Review {
 	authorImage: string;
 	authorPosition: string;
 }
+
+export interface Menu {
+	name: string;
+	url: string;
+}
