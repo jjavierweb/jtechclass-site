@@ -12,10 +12,18 @@
 		content="At Javier Aviation, our mission is to provide small businesses with top-quality IT solutions and support that enable them to operate efficiently and effectively"
 	/>
 </svelte:head>
-
-<div class="card-glass-surface p-16">
-	<div class="container mx-auto flex flex-col md:grid md:grid-cols-2 md:gap-2 items-center p-4">
-		<img src={AboutUs2} alt="About us illustration" class="w-auto h-96" width="0" height="0" />
+<!-- Section of Hero -->
+<div class="card-glass-surface px-4 py-10 md:py-20">
+	<div
+		class="container mx-auto flex flex-col md:grid md:grid-cols-2 md:gap-2 items-center relative"
+	>
+		<img
+			src={AboutUs2}
+			alt="About us illustration"
+			class="h-80 w-80 md:w-auto md:h-96 block mx-auto md:inline"
+			width="0"
+			height="0"
+		/>
 		<div class="flex flex-col">
 			<h1 class="text-4xl font-bold md:text-7xl">About Us</h1>
 			<p class="mt-4 text-lg">
@@ -34,6 +42,7 @@
 		</div>
 	</div>
 </div>
+<!-- Section for content -->
 <div class="container mx-auto p-4 mt-12">
 	<div class="flex flex-col md:grid md:grid-cols-2 md:gap-2">
 		<img src={Mission} alt="Mission" width="0" height="0" class="w-auto h-96" />
@@ -49,7 +58,7 @@
 		</div>
 	</div>
 
-	<div class="flex flex-col md:grid md:grid-cols-2 md:gap-2 mt-12">
+	<div class="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-2 mt-12">
 		<div class="mt-8">
 			<h2 class="text-3xl font-semibold md:text-5xl">Our Vision:</h2>
 			<p class="text-justify mt-4 text-lg">
