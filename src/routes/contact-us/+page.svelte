@@ -51,7 +51,7 @@
 				</div>
 				<div class="flex flex-col mt-4">
 					<label for="message">Message <span class="text-primary-500">*</span> </label>
-					<textarea name="message" id="message" />
+					<textarea name="message" id="message" class="h-64" />
 				</div>
 				<div class="flex mt-4">
 					<button type="submit" class="flex btn bg-primary-500 ">Send Message</button>
