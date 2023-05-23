@@ -120,7 +120,7 @@
 				</h2>
 				<p class="md:!text-lg text-center md:text-start font-semibold italic">
 					"Small businesses are the backbone of the economy. JTechClass is here to support yours
-					with top-notch tech services.""
+					with top-notch tech services."
 				</p>
 				<nav class="flex space-x-4 justify-center md:justify-start">
 					<a href="/" class="btn bg-primary-500 flex align-middle"
@@ -150,7 +150,7 @@
 	<hr />
 	<section id="reviews" class="mt-12 flex flex-col md:grid md:grid-cols-2 items-center">
 		<div class="grid">
-			<h2 class="text-2xl md:text-6xl text-center">The Proof is in Our Customers' Praise!</h2>
+			<h2 class="text-2xl md:text-6xl text-center">The Proof is in Our Customer's Praise!</h2>
 		</div>
 		<Testimonial {testimonials} />
 	</section>
